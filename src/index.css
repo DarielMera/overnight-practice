@@ -1,0 +1,114 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* text-decoration: none; */
+
+}
+*:link {
+  color: inherit;
+}
+*:visited {
+  color: inherit;
+}
+*:hover {
+  color: inherit;
+}
+*:active {
+  color: inherit;
+}
+body {
+  margin-top: 100px;
+  font-family:'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: auto;
+  width: fit-content;
+  padding-top: 8px;
+  max-width: 400px;
+  background-color: rgb(40, 167, 210);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.interests, .about{
+  max-width: 320px;
+  padding: 8px;
+  margin-bottom: 18px;
+  
+}
+
+h2 {
+  position: relative;
+  color: inherit;
+  margin: 0;
+  padding-left: 10px;
+  line-height: .1;
+  margin-bottom: 8px;
+  width: fit-content;
+}
+
+h2::before{
+  content: "+";
+  font-size:medium;
+  width: 200px;
+  background-color: bisque;
+  border-radius: 8px;
+  padding: 5px;
+  margin-right: 10px;
+  opacity: .9;
+}
+
+.info-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.info > :nth-child(2) {
+  background-color: bisque;
+  width: fit-content;
+  border-radius: 6px;
+  margin: auto;
+  padding: 0 106px;
+  opacity: .9;
+
+}
+
+
+#daripic {
+  max-width: 70%;
+  height: 250px;
+  object-fit:contain;
+}
+
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 0;
+}
+
+.buttons > button {
+  color: white;
+  border: 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+button.email {
+  background-color: green;
+  
+}
+
+button.linkedin {
+  background-color: blue;
+}
+
+
